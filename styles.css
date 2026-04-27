@@ -1,0 +1,83 @@
+/* Place your CSS styles in this file */
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h3{
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    color: purple;
+}
+h4 {
+    padding: 10px;
+}
+nav > ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover:not(.active) {
+  background-color: #111111;
+}
+ul li a.active {
+  background-color: purple;
+}
+.main {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+}
+img {
+  width: 300px;
+  
+}
+button {
+    background-color: purple;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+button:hover {
+    background-color: darkmagenta;
+    transform: scale(1.1);
+}
+aside {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: fixed buttom;
+}
+
+@media (max-width: 600px) {
+  aside, article {
+    width: 100%;
+    height: auto;
+  }
+}
